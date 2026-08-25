@@ -1,8 +1,9 @@
-const botaoTest = document.querySelector('#testarProjeto');
-const statusProjeto = document.querySelector('#statusProjeto');
+const botaoAtualizar = document.querySelector('#atualizarRotina');
+const statusRotina = document.querySelector('#statusRotina');
 
-botaoTeste.addEventiListener('click', () => {
-    statusProjeto.textContent = 'Projeto verificado: HTML, CSS e JavaScrivt estão conectados.';
-    statusProjeto.classList.add('Sucesso');
-    botaoTeste.textCOntent = 'Ambiente verificado';
+botaoAtualizar.addEventListener('click', () => {
+    statusRotina.textContent = 'Situação atual: rotina finalizada com sucesso.';
+    statusRotina.classList.add('concluido');
+    botaoAtualizar.textContent = 'Status atualizado';
+    botaoAtualizar.disabled = true;
 });

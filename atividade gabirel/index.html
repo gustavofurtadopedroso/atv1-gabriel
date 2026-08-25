@@ -3,58 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro projeto Front-End</title>
+    <title>Painel de tarefas do dia</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header class="cabecalho">
-        <p class="etiqueta">Programação Front-End • 2º DS Subsequente</p>
-        <h1>Meu primeiro projeto Front-End</h1>
-        <p>Uma página organizada para conferir se HTML, CSS e JavaScript estão conectados corretamente.</p>
+    <header class="topo">
+        <p class="etiqueta">Exercício FE04</p>
+        <h1>Painel de tarefas do dia</h1>
+        <p class="descricao">Organize as tarefas em cartões e use JavaScript para atualizar o status da rotina.</p>
     </header>
 
-    <main>
-
-        <section class="painel" aria-labelledby="titulo-arquivos">
-            <h2 id="titulo-arquivos">Arquivos do projeto</h2>
-
-            <div class="grade-arquivos">
-                <article>
-                    <strong>index.html</strong>
-                    <span>Organiza o conteúdo e conecta os demais arquivos.</span>
+    <main class="container">
+        <section class="painel" aria-labelledby="titulo-tarefas">
+            <h2 id="titulo-tarefas">Tarefas planejadas</h2>
+            <div class="lista-tarefas">
+                <article class="tarefa">
+                    <h3>Revisar conteúdo</h3>
+                    <p>Ler os materiais da aula e anotar os pontos principais.</p>
                 </article>
-
-                <article>
-                    <strong>estilo.css</strong>
-                    <span>Controla cores, espaçamentos e responsividade.</span>
+                <article class="tarefa">
+                    <h3>Praticar código</h3>
+                    <p>Montar uma página com HTML, CSS e JavaScript separados.</p>
                 </article>
-
-                <article>
-                    <strong>script.js</strong>
-                    <span>Adiciona comportamento e responde às ações do usuário.</span>
-                </article>
-
-                <article>
-                    <strong>README.md</strong>
-                    <span>Documenta o projeto, o estudante e a forma de execução.</span>
+                <article class="tarefa">
+                    <h3>Testar o projeto</h3>
+                    <p>Abrir no navegador e verificar se tudo está funcionando.</p>
                 </article>
             </div>
         </section>
 
-        <section class="painel" aria-labelledby="titulo-teste">
-            <h2 id="titulo-teste">Teste do ambiente</h2>
-            <p>Abra a página no navegador e use o botão para verificar a ligação entre os arquivos.</p>
-            <button id="testarProjeto" type="button">Verificar projeto</button>
-            <p id="statusProjeto" class="status" aria-live="polite">Aguardando a verificação.</p>
+        <section class="painel" aria-labelledby="titulo-status">
+            <h2 id="titulo-status">Status do dia</h2>
+            <p id="statusRotina" class="status">Situação atual: rotina em andamento.</p>
+            <button id="atualizarRotina" type="button">Atualizar status</button>
         </section>
-
     </main>
 
     <footer>
-        <p>Exercício FE01 • Colégio Estadual Alberto Gomes Veiga</p>
+        <p>Exercício FE04 - 2 DS Subsequente</p>
     </footer>
-
 </body>
 </html>
